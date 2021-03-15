@@ -1,0 +1,40 @@
+def ejercicio6():
+
+
+    cont=0
+    conta=0
+    contad=0
+
+
+
+    for x in range(8):
+
+
+        jugador=input('ingrese el nombre del jugador: ')
+        edad=int(input('ingrese la edad del jugador: '))
+
+        Novato='Novato'
+        Experto='Experto'
+        Super_Experto='Super_Experto'
+
+        if edad < 14:
+            print('INGRESO UNA EDAD NO VALIDA')
+            return()
+
+        elif edad >= 14  and edad<=16:
+            print([jugador], [edad], [Novato])
+            cont+=1
+
+        elif edad >16 and edad<=20:
+            print([jugador], [edad], [Experto])
+            conta+=1
+
+        elif edad > 20:
+            print([jugador], [edad], [Super_Experto])
+            contad+=1
+
+    print('los jugadores Novato son: ', cont)
+    print('los jugadores Experto son: ', conta)
+    print('los jugadores Super Expertos son: ', contad)
+
+ejercicio6()
