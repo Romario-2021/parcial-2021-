@@ -1,0 +1,30 @@
+class Alumno:
+
+    def __init__(self):
+        self.alumnoNew = ()
+        self.respu = ()
+        self.a = ()
+
+
+    def nuevoAlumno(self):
+        alumnoNew = []
+        print(" ")
+        print("Formulario de ingreso de alumnos")
+        print("-----------------------------------")
+        respu = input("¿Quiere resgistrar al alumno? (Si/no): ")
+        while respu == "Si" or respu == "si":
+            print("Ingrese el nombre y apellidos: ")
+            a = input()
+            alumnoNew.append((a))
+            respu = input("¿Quiere resgistrar al otro alumno? (S/F): ")
+        print(" ")
+        print("Datos guardados")
+        print("-----------------------------------")
+        for x in range(len(alumnoNew)):
+            print("[Nombre y apellido: ", alumnoNew[x][0], "] ")
+        print(" ")
+        print(" ")
+        print(" ")
+        return None
+
+Alumno().nuevoAlumno()
